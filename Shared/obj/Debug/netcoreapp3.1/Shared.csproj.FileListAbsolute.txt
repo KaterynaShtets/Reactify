@@ -1,0 +1,5 @@
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\Shared\obj\Debug\netcoreapp3.1\Shared.csprojAssemblyReference.cache
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\Shared\obj\Debug\netcoreapp3.1\Shared.AssemblyInfoInputs.cache
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\Shared\obj\Debug\netcoreapp3.1\Shared.AssemblyInfo.cs
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\Shared\obj\Debug\netcoreapp3.1\Shared.csproj.CoreCompileInputs.cache
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\Shared\obj\Debug\netcoreapp3.1\Shared.MvcApplicationPartsAssemblyInfo.cache

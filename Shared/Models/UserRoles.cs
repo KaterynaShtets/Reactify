@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 
 namespace Shared.Models
 {
-    public class UserRole
+    public static class UserRoles
     {
+        public const string Admin = "Admin";
+        public const string User = "User";
     }
 }

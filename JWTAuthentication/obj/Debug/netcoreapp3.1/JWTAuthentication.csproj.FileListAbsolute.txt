@@ -65,3 +65,9 @@ C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\R
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.dll
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.pdb
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.genruntimeconfig.cache
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\bin\Debug\netcoreapp3.1\Shared.dll
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\bin\Debug\netcoreapp3.1\Shared.pdb

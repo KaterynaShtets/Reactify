@@ -6,6 +6,7 @@ using JWTAuthentication.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Shared.Models;
 
 namespace JWTAuthentication.Controllers
 {

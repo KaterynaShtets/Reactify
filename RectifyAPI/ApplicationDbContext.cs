@@ -6,6 +6,9 @@ namespace ReactifyAPI
 {
     public class ApplicationDbContext : IdentityDbContext<Customer>
     {
+
+        public DbSet<Product> Products { get; set; }
+     
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
 

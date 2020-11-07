@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JWTAuthentication", "JWTAuthentication\JWTAuthentication.csproj", "{4C0EE14F-7CDD-4ADF-AC0A-1DFE32D79773}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RectifyAPI", "RectifyAPI\RectifyAPI.csproj", "{2D66FAC0-B61E-433A-9CCE-D0B2CC26CEE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactifyAPI", "RectifyAPI\ReactifyAPI.csproj", "{2D66FAC0-B61E-433A-9CCE-D0B2CC26CEE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{D904D01F-F7E7-417B-814D-DAF7E4C1866F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "SharedModels\Shared.csproj", "{C3497CF8-2588-4EC6-A0B7-7E808E04C71E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{2D66FAC0-B61E-433A-9CCE-D0B2CC26CEE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D66FAC0-B61E-433A-9CCE-D0B2CC26CEE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D66FAC0-B61E-433A-9CCE-D0B2CC26CEE2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D904D01F-F7E7-417B-814D-DAF7E4C1866F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D904D01F-F7E7-417B-814D-DAF7E4C1866F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D904D01F-F7E7-417B-814D-DAF7E4C1866F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D904D01F-F7E7-417B-814D-DAF7E4C1866F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3497CF8-2588-4EC6-A0B7-7E808E04C71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3497CF8-2588-4EC6-A0B7-7E808E04C71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3497CF8-2588-4EC6-A0B7-7E808E04C71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3497CF8-2588-4EC6-A0B7-7E808E04C71E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

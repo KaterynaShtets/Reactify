@@ -15,5 +15,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SharedModels\Shared.csproj" />
+  </ItemGroup>
+
 
 </Project>

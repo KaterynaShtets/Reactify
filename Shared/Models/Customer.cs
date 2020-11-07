@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace Shared.Models
 {
-    public class Customer
+    public class Customer : IdentityUser
     {
+        public string CompanyName { get; set; }
     }
 }
