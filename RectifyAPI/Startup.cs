@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BL.Interfaces;
+using BL.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -16,6 +18,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using ReactifyAPI;
+using ReactifyAPI.Repositories;
 using Shared.Models;
 
 namespace RectifyAPI
@@ -35,7 +38,10 @@ namespace RectifyAPI
             // For Entity Framework
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnStr")));
             services.AddControllers();
-            services.AddIdentity<Customer, IdentityRole>()
+            services.AddScoped<CustomerRepository>();
+            services.AddScoped<ICustomerService, CustomerService>();
+
+            services.AddIdentity<Customer, IdentityRole<int>>()
               .AddEntityFrameworkStores<ApplicationDbContext>()
               .AddDefaultTokenProviders();
 

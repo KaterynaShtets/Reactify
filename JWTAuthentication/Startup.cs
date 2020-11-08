@@ -31,9 +31,10 @@ namespace JWTAuthentication
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnStr")));
 
             // For Identity
-            services.AddIdentity<Customer, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
+          
+            services.AddIdentity<Customer, IdentityRole<int>>()
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
 
             // Adding Authentication
             services.AddAuthentication(options =>

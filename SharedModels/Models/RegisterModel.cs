@@ -13,6 +13,8 @@ namespace Shared.Models
 
         [Required(ErrorMessage = "Password is required")]
         public string Password { get; set; }
+        public string CompanyName { get; set; }
+        public string PhoneNumber { get; set; }
 
     }
 }

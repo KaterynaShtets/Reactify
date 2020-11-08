@@ -6,3 +6,4 @@ C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\R
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\SharedModels\obj\Debug\netcoreapp3.1\Shared.csproj.CoreCompileInputs.cache
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\SharedModels\obj\Debug\netcoreapp3.1\Shared.dll
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\SharedModels\obj\Debug\netcoreapp3.1\Shared.pdb
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\SharedModels\obj\Debug\netcoreapp3.1\Shared.csprojAssemblyReference.cache

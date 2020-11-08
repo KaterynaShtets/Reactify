@@ -19,10 +19,10 @@ namespace JWTAuthentication.Controllers
     public class AuthenticateController : ControllerBase
     {
         private readonly UserManager<Customer> userManager;
-        private readonly RoleManager<IdentityRole> roleManager;
+        private readonly RoleManager<IdentityRole<int>> roleManager;
         private readonly IConfiguration _configuration;
 
-        public AuthenticateController(UserManager<Customer> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+        public AuthenticateController(UserManager<Customer> userManager, RoleManager<IdentityRole<int>> roleManager, IConfiguration configuration)
         {
             this.userManager = userManager;
             this.roleManager = roleManager;
@@ -80,7 +80,9 @@ namespace JWTAuthentication.Controllers
             {
                 Email = model.Email,
                 SecurityStamp = Guid.NewGuid().ToString(),
-                UserName = model.Username
+                UserName = model.Username,
+                CompanyName = model.CompanyName,
+                PhoneNumber = model.PhoneNumber
             };
             var result = await userManager.CreateAsync(user, model.Password);
             if (!result.Succeeded)
@@ -101,16 +103,18 @@ namespace JWTAuthentication.Controllers
             {
                 Email = model.Email,
                 SecurityStamp = Guid.NewGuid().ToString(),
-                UserName = model.Username
+                UserName = model.Username,
+                CompanyName = model.CompanyName,
+                PhoneNumber = model.PhoneNumber
             };
             var result = await userManager.CreateAsync(user, model.Password);
             if (!result.Succeeded)
                 return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User creation failed! Please check user details and try again." });
 
             if (!await roleManager.RoleExistsAsync(UserRoles.Admin))
-                await roleManager.CreateAsync(new IdentityRole(UserRoles.Admin));
+                await roleManager.CreateAsync(new IdentityRole<int>(UserRoles.Admin));
             if (!await roleManager.RoleExistsAsync(UserRoles.User))
-                await roleManager.CreateAsync(new IdentityRole(UserRoles.User));
+                await roleManager.CreateAsync(new IdentityRole<int>(UserRoles.User));
 
             if (await roleManager.RoleExistsAsync(UserRoles.Admin))
             {
