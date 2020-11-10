@@ -8,7 +8,7 @@ namespace Shared.Models
     public class IndicatorsInfo : IEntity
     {
         public int Id { get; set; }
-        public int IndicatorsId { get; set; }
+        public virtual Indicators Indicators { get; set; }
         public DateTime Time { get; set; }
         public int Pulse { get; set; }
         public double Temperature { get; set; }

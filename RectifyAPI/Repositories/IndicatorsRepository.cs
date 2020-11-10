@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using DAL.EFCore;
+using Shared.Models;
 
 namespace ReactifyAPI.Repositories
 {
-    public class IndicatorsRepository
+    public class IndicatorsRepository : Repository<Indicators, ApplicationDbContext>
     {
+        public IndicatorsRepository(ApplicationDbContext context) : base(context) { }
     }
 }

@@ -56,8 +56,6 @@ C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\R
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.csprojAssemblyReference.cache
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.AssemblyInfoInputs.cache
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.AssemblyInfo.cs
-C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.csproj.CoreCompileInputs.cache
-C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.RazorTargetAssemblyInfo.cache
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.csproj.CopyComplete
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\obj\Debug\netcoreapp3.1\staticwebassets\JWTAuthentication.StaticWebAssets.Manifest.cache
@@ -71,3 +69,10 @@ C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\R
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\bin\Debug\netcoreapp3.1\Shared.dll
 C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\bin\Debug\netcoreapp3.1\Shared.pdb
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.csproj.CoreCompileInputs.cache
+C:\Users\katri\OneDrive\Рабочий стол\отчеті Лещ Сокор\Rectify\JWTAuthentication\obj\Debug\netcoreapp3.1\JWTAuthentication.MvcApplicationPartsAssemblyInfo.cache

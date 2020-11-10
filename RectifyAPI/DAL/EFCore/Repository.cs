@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Shared.Interfaces;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 
@@ -45,6 +46,15 @@ namespace DAL.EFCore
         {
             return await _entities.ToListAsync();
         }
+
+        public  IQueryable<TEntity> GetAll2()
+        {
+            return _entities.AsQueryable<TEntity>();
+        }
+        //public DbSet<TEntity> GetAll3()
+        //{
+        //    return _context<>;
+        //}
 
         public async Task<TEntity> Update(TEntity entity)
         {

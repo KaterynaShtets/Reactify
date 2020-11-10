@@ -18,6 +18,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using ReactifyAPI;
+using ReactifyAPI.BL.Interfaces;
+using ReactifyAPI.BL.Services;
 using ReactifyAPI.Repositories;
 using Shared.Models;
 
@@ -36,10 +38,16 @@ namespace RectifyAPI
         public void ConfigureServices(IServiceCollection services)
         {
             // For Entity Framework
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnStr")));
-            services.AddControllers();
+            services.AddDbContext<ApplicationDbContext>(options => options.UseLazyLoadingProxies().UseSqlServer(Configuration.GetConnectionString("ConnStr")));
+            services.AddControllers().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
             services.AddScoped<CustomerRepository>();
+            services.AddScoped<IndicatorsRepository>();
+            services.AddScoped<ProductRepository>();
+            services.AddScoped<IndicatorsInfoRepository>();
             services.AddScoped<ICustomerService, CustomerService>();
+            services.AddScoped<IProductService, ProductService>();
 
             services.AddIdentity<Customer, IdentityRole<int>>()
               .AddEntityFrameworkStores<ApplicationDbContext>()

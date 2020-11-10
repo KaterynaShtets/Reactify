@@ -8,8 +8,8 @@ namespace Shared.Models
     public class Indicators : IEntity
     {
         public int Id { get; set; }
-        public int TesterUserId { get; set; }
-        public int ProductId { get; set; }
-        public IList<IndicatorsInfo> IndicatorsInfo { get; set; }
+        public virtual TesterUser TesterUser { get; set; }
+        public virtual Product Product { get; set; }
+        public virtual IList<IndicatorsInfo> IndicatorsInfo { get; set; }
     }
 }

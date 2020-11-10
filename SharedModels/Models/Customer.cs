@@ -9,6 +9,6 @@ namespace Shared.Models
     public class Customer : IdentityUser<int>, IEntity
     {
         public string CompanyName { get; set; }
-        public IList<Product> Products { get; set; }
+        public virtual IList<Product> Products { get; set; }
     }
 }

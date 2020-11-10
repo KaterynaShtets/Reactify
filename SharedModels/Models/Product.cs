@@ -11,6 +11,6 @@ namespace Shared.Models
         public int Id { get; set;  }
         public string Name { get; set;  }
         public int CustomerId { get; set;  }
-        public IList<Indicators> Indicators { get; set; }
+        public virtual IList<Indicators> Indicators { get; set; }
     }
 }
