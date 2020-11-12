@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BL.Interfaces;
 using BL.Services;
+using DAL.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -37,21 +38,25 @@ namespace RectifyAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddIdentity<Customer, IdentityRole<int>>()
+              .AddEntityFrameworkStores<ApplicationDbContext>()
+              .AddDefaultTokenProviders();
             // For Entity Framework
             services.AddDbContext<ApplicationDbContext>(options => options.UseLazyLoadingProxies().UseSqlServer(Configuration.GetConnectionString("ConnStr")));
+            
             services.AddControllers().AddNewtonsoftJson(options =>
-    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-);
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
             services.AddScoped<CustomerRepository>();
             services.AddScoped<IndicatorsRepository>();
             services.AddScoped<ProductRepository>();
             services.AddScoped<IndicatorsInfoRepository>();
+            services.AddScoped<TesterUserRepository>();
             services.AddScoped<ICustomerService, CustomerService>();
             services.AddScoped<IProductService, ProductService>();
-
-            services.AddIdentity<Customer, IdentityRole<int>>()
-              .AddEntityFrameworkStores<ApplicationDbContext>()
-              .AddDefaultTokenProviders();
+            services.AddScoped<IIndicatorsService, IndicatorsService>();
+            services.AddScoped<ITesterUserService, TesterUserService>();
+            //services.AddScoped<IRepository<TesterUser>, TesterUserRepository>();
 
             // Adding Authentication
             services.AddAuthentication(options =>

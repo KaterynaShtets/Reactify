@@ -9,36 +9,36 @@ namespace BL.Services
 {
     public class CustomerService : ICustomerService
     {
-        private readonly CustomerRepository _repository;
+        private readonly CustomerRepository _customerRepository;
 
-        public CustomerService(CustomerRepository repository)
+        public CustomerService(CustomerRepository customerRepository)
         {
-            _repository = repository;
+            _customerRepository = customerRepository;
         }
 
         public async Task<List<Customer>> GetAllCustomers()
         {
-            return await _repository.GetAll();
+            return await _customerRepository.GetAll();
         }
 
         public async Task<Customer> GetCustomer(int id)
         {
-            return await _repository.Get(id);
+            return await _customerRepository.Get(id);
         }
 
         public async Task<Customer> UpdateCustomer(Customer entity)
         {
-            return await _repository.Update(entity);
+            return await _customerRepository.Update(entity);
         }
 
         public async Task<Customer> DeleteCustomer(int id)
         {
-            return await _repository.Delete(id);
+            return await _customerRepository.Delete(id);
         }
 
         public async Task<Customer> ChooseCustomerByName(string companyName)
         {
-            var interviews = await _repository.GetAll();
+            var interviews = await _customerRepository.GetAll();
             return interviews.FirstOrDefault(p => p.CompanyName.Equals(companyName));
         }
     }

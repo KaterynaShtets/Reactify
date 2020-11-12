@@ -20,6 +20,12 @@ namespace ReactifyAPI.Controllers
             _service = service;
         }
 
+        [HttpPost]
+        public async Task<ActionResult<Product>> Create(Product entity)
+        {
+            return await _service.CreateProduct(entity);
+        }
+
         [HttpGet]
         [Route("getAllProduct")]
         public async Task<ActionResult<List<Product>>> Get()
@@ -45,41 +51,6 @@ namespace ReactifyAPI.Controllers
         public async Task<ActionResult<Product>> Delete(int id)
         {
             return await _service.DeleteProduct(id);
-        }
-
-        [HttpGet(/*"{id}"*/)]
-        [Route("getIndicatorsByProductId")]
-        public async Task<ActionResult<List<Indicators>>> GetIndicatorsByProductId(int productId)
-        {
-            return await _service.GetIndicatorsByProductId(productId);
-        }
-
-        [HttpGet(/*"{id}"*/)]
-        [Route("getIndicatorsInfoList")]
-        public async Task<List<IndicatorsInfo>> GetIndicatorsInfoList(int productId)
-        {
-            return await _service.GetIndicatorsInfoList(productId);
-        }
-
-        [HttpGet(/*"{id}"*/)]
-        [Route("GetAvarageValuesForEachParameter")]
-        public async Task<AverageResponse> GetAvarageValuesForEachParameter(int productId)
-        {
-            return await _service.GetAvarageValuesForEachParameter(productId);
-        }
-
-        [HttpGet(/*"{id}"*/)]
-        [Route("CompareWithStartValue")]
-        public async Task<Deviation> GetDeviations(int productId)
-        {
-            return await _service.GetDeviations(productId);
-        }
-
-        [HttpGet(/*"{id}"*/)]
-        [Route("GetEmotionalReaction")]
-        public async Task<EmotionModel> GetEmotionalReaction(int productId)
-        {
-            return await _service.GetEmotionalReaction(productId);
         }
     }
 }

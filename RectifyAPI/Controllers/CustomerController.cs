@@ -10,7 +10,7 @@ namespace ReactifyAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CustomerController : Controller
+    public class CustomerController : ControllerBase
     {
         private readonly ICustomerService _service;
         public CustomerController(ICustomerService service)
@@ -40,6 +40,7 @@ namespace ReactifyAPI.Controllers
         }
 
         [HttpPut]
+        //[Route("updateCustomer")]
         public async Task<ActionResult<Customer>> Update(Customer entity)
         {
             return await _service.UpdateCustomer(entity);

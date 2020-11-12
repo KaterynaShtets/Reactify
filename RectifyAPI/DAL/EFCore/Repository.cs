@@ -47,15 +47,6 @@ namespace DAL.EFCore
             return await _entities.ToListAsync();
         }
 
-        public  IQueryable<TEntity> GetAll2()
-        {
-            return _entities.AsQueryable<TEntity>();
-        }
-        //public DbSet<TEntity> GetAll3()
-        //{
-        //    return _context<>;
-        //}
-
         public async Task<TEntity> Update(TEntity entity)
         {
             _context.Entry(entity).State = EntityState.Modified;
